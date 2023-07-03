@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: petrzakopal.com
+
+# Sitemaps
+Sitemap: petrzakopal.com/sitemap.xml
