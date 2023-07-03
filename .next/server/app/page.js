@@ -454,7 +454,7 @@ const Page = ()=>{
                     children: "I should make myself a website."
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                    className: "md:mt-10 mt-5",
+                    className: "md:mt-10 mt-3",
                     children: [
                         "For now you can follow me at",
                         " ",

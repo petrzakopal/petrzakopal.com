@@ -41,7 +41,7 @@ const Page = () => {
 				<small className="md:text-5xl text-2xl font-thin">
 					I should make myself a website.
 				</small>
-				<span className="md:mt-10 mt-5">
+				<span className="md:mt-10 mt-3">
 					For now you can follow me at{" "}
 					<span className="font-mono hover:underline transition-all ease-in-out">
 						<Link href={"https://twitter.com/petr_zakopal"}>@petr_zakopal</Link>
