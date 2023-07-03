@@ -450,7 +450,7 @@ const Page = ()=>{
             className: "w-full h-screen items-center justify-center flex flex-col text-center",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("small", {
-                    className: "md:text-5xl text-3xl font-thin",
+                    className: "md:text-5xl text-2xl font-thin",
                     children: "I should make myself a website."
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {

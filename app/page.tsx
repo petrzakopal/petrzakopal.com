@@ -38,7 +38,7 @@ const Page = () => {
 	return (
 		<>
 			<div className="w-full h-screen items-center justify-center flex flex-col text-center">
-				<small className="md:text-5xl text-3xl font-thin">
+				<small className="md:text-5xl text-2xl font-thin">
 					I should make myself a website.
 				</small>
 				<span className="md:mt-10 mt-5">
