@@ -375,7 +375,7 @@ function RootLayout({ children }) {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                 name: "theme-color",
-                content: "white",
+                content: "#fafafa",
                 id: "theme-color"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("body", {

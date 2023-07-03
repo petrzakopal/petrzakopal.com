@@ -85,7 +85,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<meta content="width=device-width, initial-scale=1" name="viewport" />
-			<meta name="theme-color" content={"white"} id="theme-color" />
+			<meta name="theme-color" content={"#fafafa"} id="theme-color" />
 			<body className={IBMPlexSans.className}>
 				<main>
 					<div
