@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"next-sitemap": "next-sitemap --config sitemap.config.js",
+		"postbuild": "next-sitemap --config sitemap.config.js",
 		"start": "next start",
 		"lint": "next lint"
 	},
@@ -32,7 +32,6 @@
 		"rehype-slug": "^5.1.0",
 		"sharp": "latest",
 		"tailwindcss": "3.3.2",
-		"turbo": "^1.10.12",
 		"typescript": "5.1.6"
 	}
 }

@@ -11,6 +11,7 @@ const nextConfig = {
 	},
 	experimental: {
 		scrollRestoration: true,
+		serverActions: true,
 	},
 };
 

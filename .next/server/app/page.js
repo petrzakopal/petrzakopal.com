@@ -4,35 +4,35 @@ exports.id = 931;
 exports.ids = [931];
 exports.modules = {
 
-/***/ 8038:
+/***/ 5752:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/compiled/react");
+module.exports = require("next/dist/compiled/react-dom-experimental/server-rendering-stub");
 
 /***/ }),
 
-/***/ 8704:
+/***/ 7640:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/compiled/react-dom/server-rendering-stub");
+module.exports = require("next/dist/compiled/react-experimental");
 
 /***/ }),
 
-/***/ 7897:
+/***/ 6931:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/compiled/react-server-dom-webpack/client");
+module.exports = require("next/dist/compiled/react-experimental/jsx-runtime");
 
 /***/ }),
 
-/***/ 6786:
+/***/ 7597:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/compiled/react/jsx-runtime");
+module.exports = require("next/dist/compiled/react-server-dom-webpack-experimental/client");
 
 /***/ }),
 
@@ -132,7 +132,7 @@ module.exports = require("next/dist/shared/lib/router/utils/format-url");
 
 /***/ }),
 
-/***/ 4490:
+/***/ 7887:
 /***/ ((module) => {
 
 "use strict";
@@ -245,6 +245,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 213:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 125, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6249, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7844, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 8782, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1522, 23))
+
+/***/ }),
+
 /***/ 644:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -261,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   metadata: () => (/* binding */ metadata)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6931);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4834);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
@@ -339,7 +350,7 @@ const Page = ()=>{
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [265,82], () => (__webpack_exec__(7245)));
+var __webpack_exports__ = __webpack_require__.X(0, [265,567], () => (__webpack_exec__(7245)));
 module.exports = __webpack_exports__;
 
 })();
