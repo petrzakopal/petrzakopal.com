@@ -2,7 +2,12 @@
 	"$schema": "https://turbo.build/schema.json",
 	"pipeline": {
 		"build": {
-			"outputs": [".next/**", "!.next/cache/**", "!.contentlayer/**"]
+			"outputs": [
+				".next/**",
+				"!.next/cache/**",
+				".contentlayer/generated/**",
+				"!.contentlayer/cache/**"
+			]
 		},
 		"lint": {}
 	}
