@@ -1,0 +1,72 @@
+.note-body {
+	@apply text-left text-base text-description;
+}
+
+.note-body img {
+	@apply mx-auto rounded-lg;
+}
+
+.note-body {
+	@apply my-10;
+}
+
+.note-body h1 {
+	@apply lg:text-4xl text-3xl text-black font-bold text-left;
+}
+
+.note-body h2 {
+	@apply lg:text-4xl text-3xl text-black font-bold text-left;
+}
+
+.note-body h3 {
+	@apply lg:text-3xl text-2xl text-black font-bold text-left;
+}
+
+.note-body h4 {
+	@apply lg:text-2xl text-xl text-black font-bold text-left;
+}
+
+.note-body h5 {
+	@apply lg:text-xl text-lg text-black font-bold text-left;
+}
+
+.note-body h6 {
+	@apply lg:text-lg text-base text-black font-bold text-left;
+}
+
+.note-body a {
+	@apply w-fit items-center hover:text-primary-accent transition-colors mr-1;
+}
+
+/* .note-body a:after { */
+/* uncomment four following lines to get external link svg image after link */
+/* @apply transition-colors relative h-4 w-4 ml-2 bg-description inline-flex top-[0.11em];
+	mask-repeat: no-repeat;
+	content: "";
+	mask: url("/assets/images/misc/external-link.svg"); */
+/* } */
+
+/* uncomment to get external link svg image */
+/* .note-body a:hover:after {
+	@apply bg-primary-accent;
+} */
+
+.note-body figcaption {
+	@apply text-sm text-description py-4 text-center;
+}
+
+.note-body p {
+	@apply my-5 leading-normal text-justify break-normal;
+}
+
+.note-body blockquote {
+	@apply italic my-5 leading-normal text-description font-light;
+}
+
+.note-body blockquote:after {
+	content: "“";
+}
+
+.note-body blockquote:before {
+	content: "„";
+}

@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/** Support for subscript and superscript in tailwind */
+/** Use <sup> for superscript or <sub> for subscript*/
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.2em;
+	vertical-align: super;
+}
+sub {
+	bottom: -0.25em;
+	vertical-align: sub;
+}
+
+/** -- Twemoji Settings -- **/
+/* when in components, emoji does not scale, because styles are not imported, because classes are not present at the time of loading */
+.emoji {
+	height: 1em;
+	width: 1em;
+	/* width: 12px; */
+	display: inline;
+	margin-left: 0.1em !important;
+}

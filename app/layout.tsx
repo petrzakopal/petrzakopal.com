@@ -1,5 +1,8 @@
+import TweemojiHandler from "@/components/scripts/tweemojihandler";
 import "./../styles/globals.css";
+import "@/styles/note-body.css";
 import { IBM_Plex_Sans } from "next/font/google";
+import { SpaceY } from "@/components/misc/space";
 
 const IBMPlexSans = IBM_Plex_Sans({
 	subsets: ["latin"],
@@ -87,11 +90,15 @@ export default function RootLayout({
 			<meta content="width=device-width, initial-scale=1" name="viewport" />
 			<meta name="theme-color" content={"#fafafa"} id="theme-color" />
 			<body className={IBMPlexSans.className}>
+				<TweemojiHandler />
 				<main>
 					<div
 						className={`flex w-full flex-col items-center min-h-screen overflow-auto ${IBMPlexSans.className} px-5 bg-[#fafafa]`}
 					>
-						<div className="w-full lg:w-inside-full">{children}</div>
+						<div className="w-full lg:w-inside-full flex flex-col">
+							{children}
+						</div>
+						<SpaceY mt={"lg:mt-24 mt-14"} />
 					</div>
 				</main>
 			</body>

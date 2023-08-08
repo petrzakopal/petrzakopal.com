@@ -1,0 +1,3 @@
+.rehype-code-title {
+	@apply bg-[#030314] text-white rounded-tl-lg rounded-tr-lg font-mono z-0 px-4 py-2;
+}
