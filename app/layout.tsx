@@ -2,7 +2,7 @@ import TweemojiHandler from "@/components/scripts/tweemojihandler";
 import "./../styles/globals.css";
 import "@/styles/note-body.css";
 import { IBM_Plex_Sans } from "next/font/google";
-import { SpaceY } from "@/components/misc/space";
+import { SpaceY } from "@/components/utils/space";
 
 const IBMPlexSans = IBM_Plex_Sans({
 	subsets: ["latin"],

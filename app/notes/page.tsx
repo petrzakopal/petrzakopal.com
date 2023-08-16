@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { allNotes, Note } from "@/.contentlayer/generated";
 import { NoteCard } from "@/components/notes/noteCard";
-import { SpaceY } from "@/components/misc/space";
+import { SpaceY } from "@/components/utils/space";
 
 // export const generateStaticParams = async () =>
 // 	allNotes.map((post: any) => ({ slug: post._raw.flattenedPath }));

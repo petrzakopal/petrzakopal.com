@@ -29,3 +29,17 @@ sub {
 	display: inline;
 	margin-left: 0.1em !important;
 }
+
+/* Hide the react-medium-image-zoom unzoom button */
+[data-rmiz-btn-unzoom] {
+	visibility: hidden;
+}
+
+[data-rmiz-modal-img] {
+	@apply rounded-lg;
+}
+
+/* Disabling Focus Visible Outline mainly for react-medium-image-zoom, but is applied on whole page */
+:focus-visible {
+	outline: none;
+}

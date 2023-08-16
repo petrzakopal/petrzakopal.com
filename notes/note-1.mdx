@@ -31,6 +31,8 @@ _This is italic._
 
 **This is bold.**
 
+## This is default MD image
+
 ![This is an image](https://petrzakopal.cz/wp-content/uploads/2020/09/Niky_grain_web-53.jpg)
 
 ```typescript:file.ts {1,3-4} showLineNumbers
@@ -41,4 +43,63 @@ export const myComponent = () => {
 
 <MyComponent />
 
-changed
+> This is a blockquote.
+
+## This is static image with zoom
+
+<Image
+	src={
+		"https://petrzakopal.cz/wp-content/uploads/2021/03/Mi%CC%81s%CC%8Ca_Gre%CC%81bovka_grain_web-5.jpg"
+	}
+	alt={"My Test Image"}
+
+/>
+
+<ImageGrid><Image
+	src={
+		"https://petrzakopal.cz/wp-content/uploads/2021/03/Mi%CC%81s%CC%8Ca_Gre%CC%81bovka_grain_web-5.jpg"
+	}
+	alt={"My Test Image"}
+
+/><Image
+src={
+"https://petrzakopal.cz/wp-content/uploads/2021/03/Mi%CC%81s%CC%8Ca_Gre%CC%81bovka_grain_web-5.jpg"
+}
+alt={"My Test Image"}
+
+/><Image
+src={
+"https://petrzakopal.cz/wp-content/uploads/2021/03/Mi%CC%81s%CC%8Ca_Gre%CC%81bovka_grain_web-5.jpg"
+}
+alt={"My Test Image"}
+
+/><Image
+src={
+"https://petrzakopal.cz/wp-content/uploads/2021/03/Mi%CC%81s%CC%8Ca_Gre%CC%81bovka_grain_web-5.jpg"
+}
+alt={"My Test Image"}
+
+/><Image
+src={
+"https://petrzakopal.cz/wp-content/uploads/2021/03/Mi%CC%81s%CC%8Ca_Gre%CC%81bovka_grain_web-5.jpg"
+}
+alt={"My Test Image"}
+
+/></ImageGrid>
+
+## Testing of a static Tweet
+
+<Tweet id="1637078900500037632" />
+
+## Testing MD link
+
+[This is a link](https://petrzakopal.cz)
+
+## Testing external component link
+
+<ExternalLink
+	href={"https://petrzakopal.cz"}
+	text={"toto je text"}
+	rel={"external"}
+	target={"_blank"}
+></ExternalLink>

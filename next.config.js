@@ -7,7 +7,17 @@ const nextConfig = {
 		defaultLocale: "en",
 	},
 	images: {
-		domains: ["localhost"],
+		domains: [
+			"localhost",
+			"petrzakopal.cz",
+			"pbs.twimg.com",
+			"abs.twimg.com",
+			"twimg.com",
+		],
+		remotePatterns: [
+			{ protocol: "https", hostname: "pbs.twimg.com" },
+			{ protocol: "https", hostname: "abs.twimg.com" },
+		],
 	},
 	experimental: {
 		scrollRestoration: true,

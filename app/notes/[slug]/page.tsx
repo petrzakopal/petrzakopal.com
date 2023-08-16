@@ -1,4 +1,4 @@
-import { SpaceY } from "@/components/misc/space";
+import { SpaceY } from "@/components/utils/space";
 import { NoteContent } from "@/components/notes/noteContent";
 import { Note, allNotes } from "contentlayer/generated";
 import Link from "next/link";

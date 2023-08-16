@@ -1,17 +1,41 @@
-import { SpaceY } from "@/components/misc/space";
+import { SpaceY } from "@/components/utils/space";
 import { Note, allNotes } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import "@/styles/rehype/rehype-prism.css";
 import "@/styles/rehype/prism-theme.css";
 import "@/styles/rehype/code-titles.css";
 import type { MDXComponents } from "mdx/types";
+import { ZoomImage } from "../utils/imageZoom";
+import { Tweet } from "react-tweet";
+import { ExternalLink } from "../utils/externalLink";
 
 const mdxComponents: MDXComponents = {
-	MyComponent: () => (
+	MyComponent: ({ data }) => (
 		<div className="bg-zinc-200 px-2.5 p-2 w-fit rounded-lg text-black">
-			Hello from MDX Component
+			Hello from MDX Component and ${data}
 		</div>
 	),
+	Image: ({ src, alt }: { src: string; alt: string }) => (
+		<ZoomImage src={src} alt={alt} />
+	),
+
+	ImageGrid: ({ children }: { children: React.ReactNode }) => (
+		<div className="w-full grid grid-cols-3 gap-5">{children}</div>
+	),
+
+	Tweet: ({ id }: { id: any }) => <Tweet id={id} />,
+
+	ExternalLink: ({
+		href,
+		text,
+		rel,
+		target,
+	}: {
+		href: string;
+		text: any;
+		rel: string;
+		target: string;
+	}) => <ExternalLink href={href} text={text} rel={rel} target={target} />,
 };
 
 // Main Single Note Page
@@ -29,7 +53,6 @@ export const NoteContent = ({ params }: { params: { slug: string } }) => {
 	console.log(note);
 
 	const MDXContent = useMDXComponent(note.body.code);
-
 	return (
 		<article className="w-full flex flex-col justify-center py-8">
 			<div className="w-full text-start flex md:flex-row flex-col md:space-x-2">

@@ -1,5 +1,5 @@
 import { Note } from "@/.contentlayer/generated";
-import { SpaceY } from "../misc/space";
+import { SpaceY } from "../utils/space";
 import Link from "next/link";
 
 /**

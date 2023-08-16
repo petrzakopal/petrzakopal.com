@@ -35,7 +35,7 @@
 }
 
 .note-body a {
-	@apply w-fit items-center hover:text-primary-accent transition-colors mr-1;
+	@apply items-center hover:text-primary-accent transition-colors;
 }
 
 /* .note-body a:after { */
@@ -60,13 +60,17 @@
 }
 
 .note-body blockquote {
-	@apply italic my-5 leading-normal text-description font-light;
+	@apply italic my-5 leading-normal text-description font-light bg-zinc-200 rounded-lg;
 }
 
-.note-body blockquote:after {
+.note-body blockquote p {
+	@apply px-2.5 py-2;
+}
+
+/* .note-body blockquote:after {
 	content: "“";
 }
 
 .note-body blockquote:before {
 	content: "„";
-}
+} */
