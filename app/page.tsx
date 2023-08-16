@@ -1,3 +1,4 @@
+import { ThemeSwitch } from "@/components/ui/themeSwitch";
 import Link from "next/link";
 
 export const metadata = {
@@ -37,7 +38,7 @@ export const metadata = {
 const Page = () => {
 	return (
 		<>
-			<div className="w-full h-screen items-center justify-center flex flex-col text-center">
+			<div className="w-full h-screen items-center justify-center flex flex-col text-center text-black dark:text-white">
 				<small className="md:text-5xl text-2xl font-thin">
 					I should make myself a website.
 				</small>
@@ -49,6 +50,7 @@ const Page = () => {
 					.
 				</span>
 			</div>
+			<ThemeSwitch />
 		</>
 	);
 };
