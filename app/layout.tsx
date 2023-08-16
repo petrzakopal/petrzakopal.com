@@ -4,6 +4,7 @@ import "@/styles/note-body.css";
 import { IBM_Plex_Sans } from "next/font/google";
 import { SpaceY } from "@/components/utils/space";
 import { ThemeProvider } from "@/components/ui/themeProvider";
+import { Navbar } from "@/components/layout/navigation/navbar";
 
 const IBMPlexSans = IBM_Plex_Sans({
 	subsets: ["latin"],
@@ -95,9 +96,10 @@ export default function RootLayout({
 					<TweemojiHandler />
 					<main>
 						<div
-							className={`flex w-full flex-col items-center min-h-screen overflow-auto ${IBMPlexSans.className} px-5 bg-[#fafafa]`}
+							className={`flex w-full flex-col items-center min-h-screen overflow-auto ${IBMPlexSans.className} px-5 bg-light-white dark:bg-dark-black`}
 						>
 							<div className="w-full lg:w-inside-full flex flex-col">
+								<Navbar />
 								{children}
 							</div>
 							<SpaceY mt={"lg:mt-24 mt-14"} />

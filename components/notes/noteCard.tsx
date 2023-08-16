@@ -18,7 +18,7 @@ export const NoteCard = ({ note }: { note: Note }) => {
 		<>
 			<Link
 				href={note.url}
-				className="w-full flex flex-col text-start items-start justify-start text-black transition-all ease-in-out px-3 p-2.5 rounded-lg bg-zinc-100 hover:bg-zinc-200"
+				className="w-full flex flex-col text-start items-start justify-start text-black transition-all ease-in-out px-3 p-2.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 dark:text-light-white dark:bg-neutral-900 dark:hover:bg-neutral-800"
 			>
 				<div className="w-full flex flex-row items-center justify-start">
 					<div className="w-full md:space-x-2 flex md:flex-row flex-row items-center justify-start">

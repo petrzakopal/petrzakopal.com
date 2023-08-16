@@ -38,13 +38,13 @@ export const metadata = {
 const Page = () => {
 	return (
 		<>
-			<div className="w-full h-screen items-center justify-center flex flex-col text-center text-black dark:text-white">
+			<div className="w-full items-center justify-center flex flex-col text-center text-dark-black dark:text-light-white">
 				<small className="md:text-5xl text-2xl font-thin">
 					I should make myself a website.
 				</small>
 				<span className="md:mt-10 mt-3">
 					For now you can follow me at{" "}
-					<span className="font-mono hover:underline transition-all ease-in-out">
+					<span className="font-mono hover:underline">
 						<Link href={"https://twitter.com/petr_zakopal"}>@petr_zakopal</Link>
 					</span>
 					.
