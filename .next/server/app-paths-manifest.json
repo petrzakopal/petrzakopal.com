@@ -1,4 +1,5 @@
 {
-  "/og/general/route": "static/webpack/app/og/general/route.5560f422bbb9e9e1.hot-update.js",
-  "/page": "app/page.js"
+  "/og/general/route": "app/og/general/route.js",
+  "/notes/page": "app/notes/page.js",
+  "/notes/[slug]/page": "app/notes/[slug]/page.js"
 }

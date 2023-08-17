@@ -13,7 +13,40 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 		(note: Note) => note._raw.flattenedPath === params.slug
 	);
 	if (!note) throw new Error(`note not found for slug: ${params.slug}`);
-	return { title: note.title };
+
+	const metadataObject = {
+		metadataBase: new URL("https://petrzakopal.com/notes"),
+		title: note.title,
+		alternates: {
+			canonical: note._raw.flattenedPath,
+		},
+		openGraph: {
+			title: note.title,
+			description: note.description,
+			url: note._raw.flattenedPath,
+			siteName: "Petr Zakopal",
+			images: [
+				{
+					url: `/og/general?slug=/notes/${note._raw.flattenedPath}&title=${note.title}`,
+					width: 1686,
+					height: 882,
+				},
+			],
+			locale: "en_GB",
+			type: "website",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: note.title,
+			description: note.description,
+			creator: "@petr_zakopal",
+			images: [
+				`/og/general?slug=/notes/${note._raw.flattenedPath}&title=${note.title}`,
+			],
+		},
+	};
+
+	return metadataObject;
 };
 
 // Main Single Note Page
