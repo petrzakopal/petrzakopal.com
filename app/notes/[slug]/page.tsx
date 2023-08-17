@@ -15,25 +15,26 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 	if (!note) throw new Error(`note not found for slug: ${params.slug}`);
 
 	const metadataObject = {
-		metadataBase: new URL("https://petrzakopal.com/notes"),
+		metadataBase: new URL("https://petrzakopal.com"),
 		title: note.title,
 		alternates: {
-			canonical: note._raw.flattenedPath,
+			canonical: note.url,
 		},
 		openGraph: {
 			title: note.title,
 			description: note.description,
-			url: note._raw.flattenedPath,
-			siteName: "Petr Zakopal",
+			url: note.url,
 			images: [
 				{
-					url: `/og/general?slug=/notes/${note._raw.flattenedPath}&title=${note.title}`,
+					url: `/og/general?slug=${note.url}&title=${note.title}`,
 					width: 1686,
 					height: 882,
 				},
 			],
 			locale: "en_GB",
-			type: "website",
+			type: "article",
+			authors: note.authors,
+			publishedTime: note.date,
 		},
 		twitter: {
 			card: "summary_large_image",

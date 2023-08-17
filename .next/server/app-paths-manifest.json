@@ -1,5 +1,6 @@
 {
   "/og/general/route": "app/og/general/route.js",
+  "/page": "app/page.js",
   "/notes/page": "app/notes/page.js",
   "/notes/[slug]/page": "app/notes/[slug]/page.js"
 }

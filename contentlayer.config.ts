@@ -16,6 +16,7 @@ export const Note = defineDocumentType(() => ({
 		date: { type: "date", required: true },
 		tags: { type: "list", of: { type: "string" } },
 		description: { type: "string", required: false },
+		authors: { type: "list", of: { type: "string" } },
 	},
 	computedFields: {
 		url: {
