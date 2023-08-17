@@ -1,3 +1,6 @@
+/* For Rehype Code Titles */
+/* Not used when rehype-pretty-code is used */
+
 .rehype-code-title {
-	@apply bg-[#030314] text-white rounded-tl-lg rounded-tr-lg font-mono z-0 px-4 py-2;
+	@apply bg-[#000000] text-[#fafafa]  rounded-tl-lg rounded-tr-lg font-mono z-0 px-4 py-2;
 }

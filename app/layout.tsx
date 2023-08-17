@@ -1,6 +1,7 @@
 import TweemojiHandler from "@/components/scripts/tweemojihandler";
 import "./../styles/globals.css";
 import "@/styles/note-body.css";
+import "@/styles/rehype/pretty-code.css";
 import { IBM_Plex_Sans } from "next/font/google";
 import { SpaceY } from "@/components/utils/space";
 import { ThemeProvider } from "@/components/ui/themeProvider";

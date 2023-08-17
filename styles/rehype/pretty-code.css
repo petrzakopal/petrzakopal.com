@@ -1,0 +1,33 @@
+/*Styles for rehype-pretty-code */
+
+[data-highlighted-line] {
+	@apply bg-[#121212];
+}
+
+[data-rehype-pretty-code-title] {
+	@apply font-mono text-sm font-bold rounded-tr-lg rounded-tl-lg border-b-2 border-solid border-[#121212] py-3 px-3 bg-black;
+}
+
+code {
+	counter-reset: line;
+}
+
+code > [data-line]::before {
+	counter-increment: line;
+	content: counter(line);
+
+	/* Other styling */
+	display: inline-block;
+	width: 1rem;
+	margin-right: 2rem;
+	text-align: right;
+	color: gray;
+}
+
+code[data-line-numbers-max-digits="2"] > [data-line]::before {
+	width: 2rem;
+}
+
+code[data-line-numbers-max-digits="3"] > [data-line]::before {
+	width: 3rem;
+}

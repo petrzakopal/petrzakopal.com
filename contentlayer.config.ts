@@ -1,8 +1,11 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypePrism from "rehype-prism-plus";
+// import rehypePrism from "rehype-prism-plus";
+// import rehypeCodeTitles from "rehype-code-titles";
+import rehypePrettyCode from "rehype-pretty-code";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
-import rehypeCodeTitles from "rehype-code-titles";
+
+import { Theme } from "./styles/rehype/theme";
 
 export const Note = defineDocumentType(() => ({
 	name: "Note",
@@ -26,8 +29,9 @@ export default makeSource({
 	documentTypes: [Note],
 	mdx: {
 		rehypePlugins: [
-			rehypeCodeTitles,
-			rehypePrism,
+			// rehypeCodeTitles,
+			// rehypePrism
+			[rehypePrettyCode, { theme: Theme }],
 			rehypeSlug,
 			[rehypeAutolinkHeadings, { behaviour: "wrap" }],
 		],

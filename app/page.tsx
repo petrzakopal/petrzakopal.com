@@ -20,9 +20,9 @@ export const metadata = {
 		siteName: "Petr Zakopal",
 		images: [
 			{
-				url: "https://petrzakopal.com/assets/images/seo/og-image.png",
-				width: 800,
-				height: 600,
+				url: `/og/general?slug=&title=I should make myself a website.`,
+				width: 1686,
+				height: 882,
 			},
 		],
 		locale: "cs_CZ",
