@@ -23,7 +23,11 @@ const mdxComponents: MDXComponents = {
 		<div className="w-full grid grid-cols-3 gap-5">{children}</div>
 	),
 
-	Tweet: ({ id }: { id: any }) => <Tweet id={id} />,
+	Tweet: ({ id }: { id: any }) => (
+		<div className="w-fit mx-auto">
+			<Tweet id={id} />
+		</div>
+	),
 
 	ExternalLink: ({
 		href,

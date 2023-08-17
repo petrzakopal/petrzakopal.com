@@ -5,6 +5,8 @@ import { IBM_Plex_Sans } from "next/font/google";
 import { SpaceY } from "@/components/utils/space";
 import { ThemeProvider } from "@/components/ui/themeProvider";
 import { Navbar } from "@/components/layout/navigation/navbar";
+import { Footer } from "@/components/layout/footer/footer";
+import { CommandMenu } from "@/components/utils/commandMenu";
 
 const IBMPlexSans = IBM_Plex_Sans({
 	subsets: ["latin"],
@@ -90,13 +92,19 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<meta content="width=device-width, initial-scale=1" name="viewport" />
-			<meta name="theme-color" content={"#fafafa"} id="theme-color" />
-			<body className={IBMPlexSans.className}>
+			<meta
+				name="theme-color"
+				content={"bg-light-white dark:bg-dark-black"}
+				id="theme-color"
+			/>
+			<body
+				className={`${IBMPlexSans.className} px-5 bg-light-white dark:bg-dark-black min-h-screen`}
+			>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 					<TweemojiHandler />
 					<main>
 						<div
-							className={`flex w-full flex-col items-center min-h-screen overflow-auto ${IBMPlexSans.className} px-5 bg-light-white dark:bg-dark-black`}
+							className={`flex w-full flex-col items-center  overflow-auto `}
 						>
 							<div className="w-full lg:w-inside-full flex flex-col">
 								<Navbar />
@@ -105,6 +113,8 @@ export default function RootLayout({
 							<SpaceY mt={"lg:mt-24 mt-14"} />
 						</div>
 					</main>
+					<Footer />
+					<CommandMenu />
 				</ThemeProvider>
 			</body>
 		</html>

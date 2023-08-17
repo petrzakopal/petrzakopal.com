@@ -1,4 +1,6 @@
-import { ThemeSwitch } from "@/components/ui/themeSwitch";
+import { PageTitle } from "@/components/layout/navigation/pageTitle";
+import { Introduction } from "@/components/page/home/introduction";
+import { SpaceY } from "@/components/utils/space";
 import Link from "next/link";
 
 export const metadata = {
@@ -38,8 +40,11 @@ export const metadata = {
 const Page = () => {
 	return (
 		<>
-			<div className="w-full items-center justify-center flex flex-col text-center text-dark-black dark:text-light-white">
-				<small className="md:text-5xl text-2xl font-thin">
+			<PageTitle title={"hello,"} />
+			<SpaceY mt={"mt-5"} />
+			<div className="w-full items-center justify-start flex flex-col text-center text-dark-black dark:text-light-white">
+				<Introduction />
+				{/* <small className="md:text-5xl text-2xl font-thin">
 					I should make myself a website.
 				</small>
 				<span className="md:mt-10 mt-3">
@@ -48,9 +53,8 @@ const Page = () => {
 						<Link href={"https://twitter.com/petr_zakopal"}>@petr_zakopal</Link>
 					</span>
 					.
-				</span>
+				</span> */}
 			</div>
-			<ThemeSwitch />
 		</>
 	);
 };

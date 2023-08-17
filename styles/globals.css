@@ -39,7 +39,16 @@ sub {
 	@apply rounded-lg;
 }
 
+[data-rmiz-modal-content] {
+	@apply bg-light-white dark:bg-dark-black;
+}
+
 /* Disabling Focus Visible Outline mainly for react-medium-image-zoom, but is applied on whole page */
 :focus-visible {
 	outline: none;
+}
+
+::selection {
+	background-color: #20ca3b;
+	color: white;
 }

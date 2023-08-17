@@ -11,7 +11,7 @@ const Page = () => {
 	console.log(allNotes);
 
 	return (
-		<div className="w-full flex flex-col py-8">
+		<>
 			<PageTitle title={"Notes"} />
 			<SpaceY mt={"mt-8"} />
 			<div className="w-full flex flex-col space-y-3">
@@ -19,7 +19,7 @@ const Page = () => {
 					<NoteCard note={note} key={index} />
 				))}
 			</div>
-		</div>
+		</>
 	);
 };
 

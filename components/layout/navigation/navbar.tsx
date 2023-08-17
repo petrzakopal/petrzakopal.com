@@ -6,11 +6,14 @@ import { LayoutGroup } from "framer-motion";
 export const Navbar = () => {
 	return (
 		<>
-			<SpaceY mt={"mt-32"} />
+			<SpaceY mt={"md:mt-32 mt-12"} />
 			<div className="w-full flex flex-row item-center">
-				<span className="text-dark-black dark:text-light-white  text-lg">
+				<Link
+					className="text-dark-black dark:text-light-white text-base py-0.5"
+					href="/"
+				>
 					Petr Zakopal
-				</span>
+				</Link>
 
 				<div className="w-fit flex flex-row space-x-3 ml-auto ">
 					{/* <ActiveLink href="/" text={"Home"} className={"text-lg"} />
