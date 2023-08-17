@@ -13,5 +13,6 @@ To create something new is very hard. When creating the website I was inspired b
 - [https://www.aarv.me/](https://www.aarv.me/)
 - [https://leerob.io/](https://leerob.io/)
 - [https://paco.me/](https://paco.me/)
+- [https://joebell.co.uk/](https://joebell.co.uk/)
 
 I did not mean to copy, just to get inspired and incorporate some aspects of the designs into my own. My main job is not a designer nor web developer, so I inspire everwhere I can to do this side job as well as I can. The website will be updated, changed and iterated over time.
