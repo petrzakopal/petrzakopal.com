@@ -130,19 +130,21 @@ export const ActiveLinkGroup = ({}: {}) => {
 											{item.text}
 										</Link>
 									</TooltipTrigger>
+									{/* On a phone */}
 									<TooltipContent
 										alignOffset={x - 100}
 										sideOffset={-y + 10}
 										className="md:hidden flex"
 									>
-										<span>In works.</span>
+										<span>In process.</span>
 									</TooltipContent>
+									{/* On a desktop */}
 									<TooltipContent
 										alignOffset={x}
 										sideOffset={-y + 10}
 										className="hidden md:flex"
 									>
-										<span>In works.</span>
+										<span>In process.</span>
 									</TooltipContent>
 								</Tooltip>
 							</TooltipProvider>

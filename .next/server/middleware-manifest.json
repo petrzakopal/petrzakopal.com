@@ -20,19 +20,15 @@
       ],
       "wasm": [
         {
-          "name": "wasm_a7e702bc5ba9227243abda7977c8096f59478d3f",
-          "filePath": "server/edge-chunks/wasm_a7e702bc5ba9227243abda7977c8096f59478d3f.wasm"
-        },
-        {
           "name": "wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020",
           "filePath": "server/edge-chunks/wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020.wasm"
+        },
+        {
+          "name": "wasm_a7e702bc5ba9227243abda7977c8096f59478d3f",
+          "filePath": "server/edge-chunks/wasm_a7e702bc5ba9227243abda7977c8096f59478d3f.wasm"
         }
       ],
       "assets": [
-        {
-          "name": "IBMPlexMono-Regular.b01b725c4365f934.ttf",
-          "filePath": "server/edge-chunks/asset_IBMPlexMono-Regular.b01b725c4365f934.ttf"
-        },
         {
           "name": "IBMPlexSans-Regular.c7dc84d05cfe8080.ttf",
           "filePath": "server/edge-chunks/asset_IBMPlexSans-Regular.c7dc84d05cfe8080.ttf"
@@ -40,6 +36,10 @@
         {
           "name": "IBMPlexSans-SemiBold.9617e7fa3dc6e5c9.ttf",
           "filePath": "server/edge-chunks/asset_IBMPlexSans-SemiBold.9617e7fa3dc6e5c9.ttf"
+        },
+        {
+          "name": "IBMPlexMono-Regular.b01b725c4365f934.ttf",
+          "filePath": "server/edge-chunks/asset_IBMPlexMono-Regular.b01b725c4365f934.ttf"
         },
         {
           "name": "noto-sans-v27-latin-regular.5dda3fca77107598.ttf",

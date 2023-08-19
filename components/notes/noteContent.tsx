@@ -27,6 +27,8 @@ const mdxComponents: MDXComponents = {
 		</div>
 	),
 
+	pre: Pre,
+
 	ExternalLink: ({
 		href,
 		text,
@@ -38,8 +40,6 @@ const mdxComponents: MDXComponents = {
 		rel: string;
 		target: string;
 	}) => <ExternalLink href={href} text={text} rel={rel} target={target} />,
-
-	pre: Pre,
 };
 
 // Main Single Note Page

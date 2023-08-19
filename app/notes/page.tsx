@@ -7,8 +7,42 @@ import { PageTitle } from "@/components/layout/navigation/pageTitle";
 // export const generateStaticParams = async () =>
 // 	allNotes.map((post: any) => ({ slug: post._raw.flattenedPath }));
 
+export const metadata = {
+	title: "Notes – Petr Zakopal",
+	description: "Notes of an engineering student.",
+	metadataBase: new URL("https://petrzakopal.com"),
+	alternates: {
+		canonical: "/",
+		// languages: {
+		// 	cs_CZ: "",
+		// },
+	},
+	openGraph: {
+		title: "Petr Zakopal",
+		description: "Notes of an engineering student.",
+		url: "https://petrzakopal.com",
+		siteName: "Petr Zakopal",
+		images: [
+			{
+				url: `/og/general?slug=&title=Notes of an engineering student.`,
+				width: 1686,
+				height: 882,
+			},
+		],
+		locale: "cs_CZ",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Petr Zakopal – Notes of an engineering student.",
+		description: "Notes of an engineering student.",
+		creator: "@petr_zakopal",
+		images: [`/og/general?slug=&title=Notes of an engineering student.`],
+	},
+};
+
 const Page = () => {
-	console.log(allNotes);
+	// console.log(allNotes);
 
 	return (
 		<>

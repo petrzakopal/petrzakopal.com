@@ -1,11 +1,10 @@
 import { PageTitle } from "@/components/layout/navigation/pageTitle";
 import { Introduction } from "@/components/page/home/introduction";
 import { SpaceY } from "@/components/utils/space";
-import Link from "next/link";
 
 export const metadata = {
 	title: "Petr Zakopal",
-	description: "I should make myself a website.",
+	description: "An engineering student.",
 	metadataBase: new URL("https://petrzakopal.com"),
 	alternates: {
 		canonical: "/",
@@ -15,12 +14,12 @@ export const metadata = {
 	},
 	openGraph: {
 		title: "Petr Zakopal",
-		description: "I should make myself a website.",
+		description: "An engineering student.",
 		url: "https://petrzakopal.com",
 		siteName: "Petr Zakopal",
 		images: [
 			{
-				url: `/og/general?slug=&title=I should make myself a website.`,
+				url: `/og/general?slug=&title=An engineering student.`,
 				width: 1686,
 				height: 882,
 			},
@@ -30,10 +29,10 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Petr Zakopal – I should make myself a website.",
-		description: "I should make myself a website.",
+		title: "Petr Zakopal – An engineering student.",
+		description: "An engineering student.",
 		creator: "@petr_zakopal",
-		images: ["https://petrzakopal.com/assets/images/seo/og-image.png"],
+		images: [`/og/general?slug=&title=An engineering student.`],
 	},
 };
 

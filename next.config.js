@@ -13,6 +13,7 @@ const nextConfig = {
 			"pbs.twimg.com",
 			"abs.twimg.com",
 			"twimg.com",
+			"images.unsplash.com",
 		],
 		remotePatterns: [
 			{ protocol: "https", hostname: "pbs.twimg.com" },

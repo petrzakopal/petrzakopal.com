@@ -22,13 +22,23 @@ export const NoteCard = ({ note }: { note: Note }) => {
 			>
 				<div className="w-full flex flex-row items-center justify-start">
 					<div className="w-full md:space-x-2 flex md:flex-row flex-row items-center justify-start">
-						<h2 className="text-base md:text-lg font-bold md:min-w-fit w-full md:w-auto">
+						<h2 className="text-base md:text-lg font-bold  w-full md:inline">
 							{note.title}
+							<time className="!font-normal text-zinc-400 text-base text-start inline whitespace-nowrap break-words">
+								<sup className="ml-1 min-w-fit md:inline hidden">
+									{datePublished}
+								</sup>
+								{/* Time on the mobile phone under the heading */}
+								<span className="md:hidden flex text-sm mt-2">
+									{datePublished}
+								</span>
+							</time>
 						</h2>
-						<time className="text-zinc-400 text-base text-start md:w-full min-w-fit">
+						{/* Time on mobile phone next to the heading */}
+						{/* <time className="text-zinc-400 text-base text-start md:w-fit min-w-fit">
 							<sup className="min-w-fit md:flex hidden">{datePublished}</sup>
 							<span className="md:hidden flex text-sm">{datePublished}</span>
-						</time>
+						</time> */}
 					</div>
 					{/* <div className="ml-10 relative w-fit flex flex-row space-x-5">
 							{note.tags?.map((tag) => (

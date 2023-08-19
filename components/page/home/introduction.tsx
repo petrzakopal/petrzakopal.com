@@ -7,7 +7,7 @@ export const Introduction = () => {
 	return (
 		<>
 			<div className="relative w-full text-dark-black dark:text-light-white text-start justify-start flex flex-col">
-				<p>I am a Ph.D. engineering student</p>
+				<p>I am an engineering student</p>
 				<p className="relative space-y-3 text-base">
 					at the
 					<Link
