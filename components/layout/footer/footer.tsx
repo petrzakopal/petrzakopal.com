@@ -40,9 +40,8 @@ export const Footer = () => {
 			<div className="relative flex w-full flex-row text-sm">
 				{linkArray.map((item) => {
 					return (
-						<span>
+						<span key={item.text}>
 							<Link
-								key={item.text}
 								target={"_blank"}
 								href={item.href}
 								className={cn(
