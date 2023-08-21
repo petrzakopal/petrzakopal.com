@@ -1,6 +1,6 @@
 # My personal website
 
-For now it states just that I should make myself a website. Should I?
+For now this page states just that I should make myself a website. Should I?
 
 Follow me at [@petr_zakopal](https://x.com/petr_zakopal).
 
