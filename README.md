@@ -8,6 +8,8 @@ Follow me at [@petr_zakopal](https://x.com/petr_zakopal).
 
 To create something new is very hard. When creating the website I was inspired by the beautiful design of websites by amazing designers and engineers from X (formerly Twitter), such as.
 
+
+
 - [https://linusrogge.com/](https://linusrogge.com/)
 - [https://shud.in/](https://shud.in/)
 - [https://www.aarv.me/](https://www.aarv.me/)
