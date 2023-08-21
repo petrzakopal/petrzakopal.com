@@ -1,4 +1,4 @@
-# My personal website/portfolio
+# My personal website/portfolio/notes
 
 For now this page states just that I should make myself a website. Should I?
 
