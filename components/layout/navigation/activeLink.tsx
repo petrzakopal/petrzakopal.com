@@ -69,6 +69,11 @@ export const ActiveLinkGroup = ({}: {}) => {
 	if (pathname.includes("/projects/")) {
 		pathname = "/projects";
 	}
+	// Opening and closing tooltip
+	const [isOpen, setIsOpen] = useState(false);
+
+	// Custom react hook for getting the x and y position of a mouse on an element which is refferenced by ref={ref}
+	const { ref, x, y } = useMouse();
 
 	return (
 		<>
@@ -101,11 +106,6 @@ export const ActiveLinkGroup = ({}: {}) => {
 							</Link>
 						);
 					} else {
-						// Opening and closing tooltip
-						const [isOpen, setIsOpen] = useState(false);
-
-						// Custom react hook for getting the x and y position of a mouse on an element which is refferenced by ref={ref}
-						const { ref, x, y } = useMouse();
 						return (
 							<TooltipProvider delayDuration={0} key={item.text}>
 								<Tooltip open={isOpen} onOpenChange={setIsOpen}>
