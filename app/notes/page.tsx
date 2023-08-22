@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allNotes, Note } from "@/.contentlayer/generated";
+import { allNotes } from "@/.contentlayer/generated";
 import { NoteCard } from "@/components/notes/noteCard";
 import { SpaceY } from "@/components/utils/space";
 import { PageTitle } from "@/components/layout/navigation/pageTitle";
