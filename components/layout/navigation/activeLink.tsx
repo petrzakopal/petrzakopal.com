@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 import { LayoutGroup, motion } from "framer-motion";
 import {
 	Tooltip,
@@ -35,7 +35,7 @@ export const ActiveLink = ({
 	return (
 		<>
 			<Link
-				className={cn(
+				className={ctw(
 					"",
 					className,
 					isActive
@@ -77,7 +77,7 @@ export const ActiveLinkGroup = ({}: {}) => {
 					if (item.visible === true) {
 						return (
 							<Link
-								className={cn(
+								className={ctw(
 									"",
 									pathname === item.href
 										? "text-primary-accent underline-offset-2 relative"
@@ -117,7 +117,7 @@ export const ActiveLinkGroup = ({}: {}) => {
 										}}
 									>
 										<Link
-											className={cn(
+											className={ctw(
 												"",
 												pathname === item.href
 													? "text-primary-accent  underline-offset-2 relative"

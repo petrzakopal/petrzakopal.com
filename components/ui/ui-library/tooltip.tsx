@@ -3,7 +3,7 @@
 import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 
 const TooltipProvider = TooltipPrimitive.Provider;
 
@@ -21,7 +21,7 @@ const TooltipContent = React.forwardRef<
 		alignOffset={alignOffset}
 		align="start"
 		hideWhenDetached
-		className={cn(
+		className={ctw(
 			"z-50 overflow-hidden rounded-md border border-zinc-200 dark:border-neutral-900 bg-light-white dark:bg-dark-black px-3 py-1.5 text-sm text-dark-black dark:text-light-white shadow-md animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out duration-0 data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95",
 			className
 		)}

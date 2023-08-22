@@ -1,6 +1,6 @@
 import { ThemeSwitch } from "@/components/ui/themeSwitch";
 import Link from "next/link";
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 import { SpaceY } from "@/components/utils/space";
 import { FooterNavigation } from "./footerNavigation";
 
@@ -44,7 +44,7 @@ export const Footer = () => {
 							<Link
 								target={"_blank"}
 								href={item.href}
-								className={cn(
+								className={ctw(
 									{
 										"text-dark-black dark:text-light-white dark:hover:text-zinc-300 hover:text-neutral-700 transition-colors ease-in-out underline underline-offset-4 decoration-2 decoration-dark-black dark:decoration-light-white dark:hover:decoration-zinc-300 hover:decoration-neutral-700":
 											true,

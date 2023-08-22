@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 import { Copy, Check } from "lucide-react";
 
 interface IPre extends React.HTMLAttributes<HTMLPreElement> {
@@ -28,7 +28,7 @@ const Pre = ({ className, ...props }: IPre) => {
 			<button
 				aria-label="Copy code"
 				type="button"
-				className={cn(
+				className={ctw(
 					"absolute w-fit h-fit right-6 -top-8 z-50 p-2 items-center justify-center",
 					copied ? "text-primary-accent" : "text-light-white"
 				)}
@@ -36,13 +36,13 @@ const Pre = ({ className, ...props }: IPre) => {
 			>
 				<>
 					<Check
-						className={cn(
+						className={ctw(
 							"absolute top-0 left-0 w-5 h-5 transition-all ease-in-out",
 							copied ? "scale-100" : "scale-0"
 						)}
 					/>
 					<Copy
-						className={cn(
+						className={ctw(
 							"absolute top-0 left-0 w-5 h-5 transition-all ease-in-out",
 							copied ? "scale-0" : "scale-100"
 						)}
@@ -50,7 +50,7 @@ const Pre = ({ className, ...props }: IPre) => {
 				</>
 			</button>
 			<pre
-				className={cn(
+				className={ctw(
 					"pre overflow-x-auto rounded-lg px-3 py-4 font-mono",
 					className
 				)}

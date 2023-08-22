@@ -5,7 +5,7 @@
 }
 
 [data-rehype-pretty-code-title] {
-	@apply font-mono text-sm font-bold rounded-tr-lg rounded-tl-lg border-b-2 border-solid border-[#121212] py-3 px-3 bg-black;
+	@apply font-mono text-sm font-bold rounded-tr-lg rounded-tl-lg border-b-2 border-solid border-[#121212] py-3 px-3 bg-black text-light-white dark:text-light-white;
 }
 
 code {

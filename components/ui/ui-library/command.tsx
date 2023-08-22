@@ -5,7 +5,7 @@ import { DialogProps } from "@radix-ui/react-dialog";
 import { Command as CommandPrimitive } from "cmdk";
 import { Search } from "lucide-react";
 
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 import { Dialog, DialogContent } from "@/components/ui/ui-library/dialog";
 
 const Command = React.forwardRef<
@@ -14,7 +14,7 @@ const Command = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<CommandPrimitive
 		ref={ref}
-		className={cn(
+		className={ctw(
 			"flex h-full w-full flex-col overflow-hidden rounded-md text-dark-black dark:text-light-white",
 			className
 		)}
@@ -48,7 +48,7 @@ const CommandInput = React.forwardRef<
 		<Search className="mr-2 h-4 w-4 shrink-0 opacity-50 text-dark-black dark:text-light-white/70" />
 		<CommandPrimitive.Input
 			ref={ref}
-			className={cn(
+			className={ctw(
 				"flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:dark:text-light-white placeholder:text-dark-black disabled:cursor-not-allowed disabled:opacity-50",
 				className
 			)}
@@ -65,7 +65,10 @@ const CommandList = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<CommandPrimitive.List
 		ref={ref}
-		className={cn("max-h-[300px] overflow-y-auto overflow-x-hidden", className)}
+		className={ctw(
+			"max-h-[300px] overflow-y-auto overflow-x-hidden",
+			className
+		)}
 		{...props}
 	/>
 ));
@@ -91,7 +94,7 @@ const CommandGroup = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<CommandPrimitive.Group
 		ref={ref}
-		className={cn(
+		className={ctw(
 			"overflow-hidden p-1 text-dark-black dark:text-light-white [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:dark:text-neutral-500",
 			className
 		)}
@@ -107,7 +110,7 @@ const CommandSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<CommandPrimitive.Separator
 		ref={ref}
-		className={cn("-mx-1 h-px bg-zinc-200 dark:bg-neutral-900", className)}
+		className={ctw("-mx-1 h-px bg-zinc-200 dark:bg-neutral-900", className)}
 		{...props}
 	/>
 ));
@@ -119,7 +122,7 @@ const CommandItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<CommandPrimitive.Item
 		ref={ref}
-		className={cn(
+		className={ctw(
 			"relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none aria-selected:bg-zinc-100 aria-selected:dark:bg-neutral-900 aria-selected:text-accent-darktext-dark-black dark:text-light-white data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
 			className
 		)}
@@ -135,7 +138,7 @@ const CommandShortcut = ({
 }: React.HTMLAttributes<HTMLSpanElement>) => {
 	return (
 		<span
-			className={cn(
+			className={ctw(
 				"ml-auto text-xs tracking-widest dark:text-light-white",
 				className
 			)}

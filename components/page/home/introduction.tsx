@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 import { SpaceY } from "@/components/utils/space";
 
 export const Introduction = () => {
@@ -12,7 +12,7 @@ export const Introduction = () => {
 					at the
 					<Link
 						href="https://www.cvut.cz"
-						className={cn(
+						className={ctw(
 							{
 								"w-fit inline-flex items-center ml-2 rounded-lg dark:bg-neutral-900 dark:hover:bg-neutral-800 bg-zinc-100 hover:bg-zinc-200 transition-colors ease-in-out px-2 py-0.5 text-sm":
 									true,
@@ -36,7 +36,7 @@ export const Introduction = () => {
 					</Link>
 					<Link
 						href="https://fel.cvut.cz"
-						className={cn(
+						className={ctw(
 							{
 								"w-fit inline-flex items-center ml-2 rounded-lg dark:bg-neutral-900 dark:hover:bg-neutral-800 bg-zinc-100 hover:bg-zinc-200 transition-colors ease-in-out px-2 py-0.5 text-sm":
 									true,
@@ -63,7 +63,7 @@ export const Introduction = () => {
 					department of
 					<Link
 						href="https://motor.feld.cvut.cz/"
-						className={cn(
+						className={ctw(
 							{
 								"w-fit inline-flex items-center md:ml-2 ml-0 mr-2 rounded-lg dark:bg-neutral-900 dark:hover:bg-neutral-800 bg-zinc-100 hover:bg-zinc-200 transition-colors ease-in-out px-2 py-0.5 text-sm":
 									true,

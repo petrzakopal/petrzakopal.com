@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { cn } from "@/lib/cnHelper";
+import { ctw } from "@/lib/ctwHelper";
 import {
 	Tooltip,
 	TooltipContent,
@@ -30,7 +30,7 @@ export const FooterNavigation = () => {
 						if (item.visible === true) {
 							return (
 								<Link
-									className={cn(
+									className={ctw(
 										"",
 
 										"text-dark-black dark:text-light-white dark:hover:text-zinc-300 hover:text-neutral-700"
@@ -59,7 +59,7 @@ export const FooterNavigation = () => {
 											}}
 										>
 											<Link
-												className={cn(
+												className={ctw(
 													"",
 
 													"text-dark-black dark:text-light-white dark:hover:text-zinc-300 hover:text-neutral-700",
