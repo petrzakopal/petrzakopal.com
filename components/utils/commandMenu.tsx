@@ -32,7 +32,8 @@ export function CommandMenu() {
 	// Event listener for pressing opening command
 	useEffect(() => {
 		const down = (e: KeyboardEvent) => {
-			if (e.key === "k" && e.metaKey) {
+			if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+				e.preventDefault();
 				setOpen((open) => !open);
 			}
 		};
