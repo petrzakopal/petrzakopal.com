@@ -59,7 +59,7 @@ export const Introduction = () => {
 							className="ml-2"
 							priority
 						/>
-					</Link>
+					</Link>{" "}
 					department of
 					<Link
 						href="https://motor.feld.cvut.cz/"
