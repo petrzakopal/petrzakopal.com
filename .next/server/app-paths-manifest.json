@@ -1,3 +1,4 @@
 {
-  "/server-sitemap.xml/route": "app/server-sitemap.xml/route.js"
+  "/page": "app/page.js",
+  "/notes/page": "app/notes/page.js"
 }
