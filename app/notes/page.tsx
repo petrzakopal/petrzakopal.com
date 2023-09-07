@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allNotes } from "@/.contentlayer/generated";
+import { Note, allNotes } from "@/.contentlayer/generated";
 import { NoteCard } from "@/components/notes/noteCard";
 import { SpaceY } from "@/components/utils/space";
 import { PageTitle } from "@/components/layout/navigation/pageTitle";
@@ -49,9 +49,9 @@ const Page = () => {
 			<PageTitle title={"Notes"} />
 			<SpaceY mt={"mt-8"} />
 			<div className="w-full flex flex-col space-y-3">
-				{allNotes.map((note: any, index: number) => (
-					<NoteCard note={note} key={index} />
-				))}
+				{allNotes.map((note: Note, index: number) =>
+					note.visible ? <NoteCard note={note} key={index} /> : ""
+				)}
 			</div>
 		</>
 	);

@@ -54,7 +54,7 @@ export const NoteContent = ({ params }: { params: { slug: string } }) => {
 		timeZone: "UTC",
 	});
 
-	console.log(note);
+	//console.log(note);
 
 	const MDXContent = useMDXComponent(note.body.code);
 	return (

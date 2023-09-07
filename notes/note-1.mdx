@@ -1,0 +1,150 @@
+---
+title: My First Testing Mockup Note about trying the ContentLayer for Next.js (not meant to be published)
+date: 2023-08-07
+tags:
+  - myTag1
+  - myTag2
+description: This is a short description of this first note.
+authors:
+  - Petr Zakopal
+  - Mistr Man
+visible: false
+---
+
+Ullamco et nostrud magna commodo nostrud ...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id facilisis justo. Donec id scelerisque purus. Proin tempor augue ut nisi porttitor hendrerit. Proin congue velit mauris. Etiam eu viverra nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ullamcorper mi vel odio vestibulum auctor. Vestibulum est tortor, blandit vel purus nec, consequat maximus sapien. Duis et fermentum eros, in bibendum eros. Nullam vitae sapien ac diam tempus ultricies. Donec ut erat nec quam sodales dapibus vel vitae ante. Proin a mauris aliquam, lacinia quam vitae, volutpat elit. Aliquam eleifend, enim ullamcorper ullamcorper feugiat, tellus eros vehicula lorem, et dictum sapien ex ac nibh. Ut cursus justo in risus tempor tempor. Ut lobortis dui scelerisque, efficitur odio sed, accumsan sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+In hac habitasse platea dictumst. Maecenas tristique, magna eu molestie ultrices, mauris quam lacinia nulla, quis dignissim odio lorem at diam. Integer vehicula blandit accumsan. Aliquam posuere nulla non augue tincidunt mollis. Nullam vestibulum, lorem eu euismod convallis, ex erat vehicula felis, tincidunt placerat nisi sapien a justo. Sed convallis augue eu nibh sagittis, lacinia efficitur lectus rhoncus. Nulla facilisi. Aliquam sed lobortis ipsum, ac pharetra leo. Sed auctor viverra urna, in fermentum nisl vehicula vitae. Suspendisse sit amet sapien blandit orci faucibus pretium nec at dolor. Curabitur efficitur pellentesque neque. Donec augue erat, hendrerit quis luctus at, fringilla nec nibh.
+😇
+
+Hello from a note, [This is a link](http://petrzakopal.cz).
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+_This is italic._
+
+**This is bold.**
+
+## This is default MD image
+
+![This is an image](https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb)
+
+new text
+
+## Pre For rehype-prism-plus
+
+```diff-typescript:file.ts {1,3-6} showLineNumbers
+// You can copy this code block
+- interface EmojiProps {
+  label?: string;
+  emoji: string;
+}
+// Note the highlighted rows below
++ export default function Emoji({ label, emoji, ...props }: EmojiProps) {
+  return (
+    <span
+      role="img"
+      aria-label={label || ""}
+      aria-hidden={label ? "false" : "true"}
+      {...props}
+    >
+      {emoji}
+    </span>
+  );
+}
+```
+
+## Pre For rehype-pretty-code
+
+```typescript title="file.tsx" {1-3,4} showLineNumbers
+// You can copy this code block
+- interface EmojiProps {
+  label?: string;
+  emoji: string;
+}
+// Note the highlighted rows below
++ export default function Emoji({ label, emoji, ...props }: EmojiProps) {
+  return (
+    <span
+      role="img"
+      aria-label={label || ""}
+      aria-hidden={label ? "false" : "true"}
+      {...props}
+    >
+      {emoji}
+    </span>
+  );
+}
+```
+
+> This is a blockquote.
+
+## This is static image with zoom
+
+<Image
+	src={
+		"https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+	}
+	alt={"My Test Image"}
+
+/>
+
+<ImageGrid><Image
+	src={
+		"https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+	}
+	alt={"My Test Image"}
+
+/><Image
+src={
+"https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+}
+alt={"My Test Image"}
+
+/><Image
+src={
+"https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+}
+alt={"My Test Image"}
+
+/><Image
+src={
+"https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+}
+alt={"My Test Image"}
+
+/><Image
+src={
+"https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+}
+alt={"My Test Image"}
+
+/></ImageGrid>
+
+## Testing of a static Tweet
+
+<Tweet id="1637078900500037632" />
+
+## Testing MD link
+
+[This is a link](https://petrzakopal.cz)
+
+## Testing external component link
+
+<ExternalLink
+	href={"https://petrzakopal.cz"}
+	text={"toto je text"}
+	rel={"external"}
+	target={"_blank"}
+></ExternalLink>
