@@ -1,6 +1,6 @@
 import { SpaceY } from "@/components/utils/space";
 import { Note, allNotes } from "contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
+import { useMDXComponent } from "next-contentlayer2/hooks";
 
 // Imports which were used with rehype-prism and rehype-code-titles
 // import "@/styles/rehype/rehype-prism.css";
